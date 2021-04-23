@@ -68,7 +68,7 @@ body{
 
 
 html.dark-mode {
-    background: #AED6F1;
+    filter: background: #AED6F1;
 }
 
 
