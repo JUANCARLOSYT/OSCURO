@@ -72,6 +72,14 @@ html.dark-mode body{
     
 }
 
+html.dark-mode checkbox{
+   
+   filter: invert(100%);
+
+   
+    
+}
+
 
 
 
