@@ -72,7 +72,7 @@ html.dark-mode body{
     
 }
 
-html.dark-mode {
+html.dark-mode label{
    
    filter: invert(100%);
 
