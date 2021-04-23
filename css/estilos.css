@@ -62,6 +62,10 @@
     background: white;
 }
 
+.dark-mode-checkbox{
+    label: "checkbox";
+  
+}
 
 
 html.dark-mode body{
