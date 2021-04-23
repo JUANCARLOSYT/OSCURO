@@ -67,8 +67,8 @@ body{
 
 
 
-html.dark-mode background{
-    filter: invert(100%);
+html.dark-mode {
+    background: #AED6F1;
 }
 
 
