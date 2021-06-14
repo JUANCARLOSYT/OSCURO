@@ -128,7 +128,13 @@ header .barra-busqueda {
 
 
 
-
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: "100%") {
+	.grid .item {
+		width: calc("100%" - "100%");
+	}
 
 
 
