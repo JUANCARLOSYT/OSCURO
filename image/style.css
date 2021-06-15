@@ -1,43 +1,115 @@
 
-body{
+*{
     margin: 0;
     padding: 0;
-    background:#101010;
-    font-family: monospace;
-}
-.carousel{
-    height: 900px;
-    perspective: 800px;
-    margin-top: -310px;
-}
-.carousel .carousel-item{
-    width:280px;
-    cursor: pointer;
-}
-img{
-    width:100%;
-    border-radius: 0 0 50px 50px;
-}
-.carousel .carousel-item h3{
-    margin: 0;
-    margin-top:-100px;
-    font-weight: bold;
-    background: #fff;
-    padding: 100px 5px;
-    color:#000;
-    font-size: 2em;
     box-sizing: border-box;
-    text-align: center;
+    font-family: arial;
 }
-.social{
-    text-align: center;
-    margin-top: -80px;
+body{
+    background-color: rgb(0,191,255);
 }
-.social a{
-    color:#000;
-    font-size: 25px;
-    padding: 5px;
-    border:2px solid #000;
-    border-radius: 5px;
+header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
 }
+#chk1{
+    display: none;
+}
+header .logo{
+    flex: 1;
+    color:#fff;
+    text-shadow: 0 0 2px #000;
+    margin-left: 50px;
+}
+header .search-box{
+    flex: 1;
+    position: relative;
+}
+.search-box input{
+    width:100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background:#444;
+    border-radius: 30px;
+    color:whitesmoke;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+}
+.search-box button{
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    border-radius: 30px;
+    border:none;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: scale(0.9);
+}
+header ul {
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: whitesmoke;
+        height: calc(100vh - 100px);
+        width:50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header ul li a{
+        color:#000;
+    }
+    header .menu{
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
 
+}
+@media(max-width:600px){
+    header .logo{
+        font-size:12px;
+        margin-left:5px;
+    }
+    header ul{
+        width:100%;
+    }
+}
