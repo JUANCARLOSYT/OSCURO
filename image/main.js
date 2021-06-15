@@ -1,4 +1,3 @@
-  
 const grid = new Muuri('.grid', {
 	layout: {
 		rounding: false
@@ -30,7 +29,7 @@ window.addEventListener('load', () => {
 
 	// Agregamos listener para las imagenes
 	const overlay = document.getElementById('overlay');
-	document.querySelectorAll('.grid .item img').forEach((elemento) => {
+	document.querySelectorAll('VEN').forEach((elemento) => {
 		elemento.addEventListener('click', () => {
 			const ruta = elemento.getAttribute('src');
 			const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
