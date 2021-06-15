@@ -62,7 +62,7 @@ body{
   top: 15%;
   margin: 20px;
   width: 100%;
-  text-align: center;
+  
   margin-top: 30px;
 
 }
@@ -79,23 +79,6 @@ body{
   text-decoration: none;
 }
 
-/* Menu Hover Effect */
-
-.overlay-content a:hover,
-.overlay-content a:focus{
-  color: rgb(255,255,255) !important;
-  background: rgb(236,51,181);
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 20px;
-
-}
 * {
 	margin: 0;
 	padding: 0;
