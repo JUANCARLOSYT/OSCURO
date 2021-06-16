@@ -99,15 +99,10 @@ header {
 }
 
 
-header form {
-	width: 80%;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 20px;
-}
+
 
 header .barra-busqueda {
-	width: 80%;
+	width: 90%;
 	height: 40px;
 	line-height: 40px;
 	background: #fff;
