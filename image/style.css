@@ -1,13 +1,9 @@
-body{
-  margin: 0;
-  padding: 0;
-}
 .myPage{
   width: 100%;
   height: 720px;
   background-size: cover;
   background-image: url("image.jfif");
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -33,6 +29,7 @@ body{
 .overlay{
   height: 0%;
   width: 100%;
+  position: fixed;
   z-index: 9999999;
   left: 0;
   top: 0;
@@ -61,7 +58,7 @@ body{
   top: 15%;
   margin: 20px;
   width: 100%;
-  
+  text-align: center;
   margin-top: 30px;
 
 }
