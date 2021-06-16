@@ -134,8 +134,8 @@ header .barra-busqueda {
 	position: absolute;
 	display: block;
 	padding: 0;
-	margin: 10px;
-	width: calc(33.333333% - 20px);
+	margin: 5px;
+	width: calc(25% - 20px);
 }
 
 .grid .item-contenido {
